@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+
+<script>
+    class Player{
+        name;
+        deck = [];
+
+
+        constructor(name, deck) {
+            this.name = name;
+            this.deck = deck;
+        }
+
+        add_to_deck(kaart){
+            //Maar controleer bijv of er niet al 6 kaarten in de deck zitten
+            this.deck.push(kaart);
+        }
+    }
+
+    class Card{
+        name;
+        elixer;
+
+
+        constructor(name, elixer) {
+            this.name = name;
+            this.elixer = elixer;
+        }
+    }
+
+    let speler = new Player("Jinxzy", [])
+    let card_01 = new Card("Hog Rider", 4);
+    let card_02 = new Card("Log", 2);
+    let card_03 = new Card("Ridder", 3 );
+    let card_04 = new Card("Pekka", 7);
+    speler.add_to_deck(card_01);
+    speler.add_to_deck(card_02);
+    speler.add_to_deck(card_03);
+    speler.add_to_deck(card_04)
+
+
+    console.log(speler);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+<script>
+
+    class Character{
+        name;
+        level;
+        gold;
+        health;
+
+
+        constructor(name, level, gold, health) {
+            this.name = name;
+            this.level = level;
+            this.gold = gold;
+            this.health = health;
+        }
+    }
+    class Mage extends Character{
+
+        mana;
+
+
+        constructor(name, level, gold, health, mana) {
+            super(name, level, gold, health);
+            this.mana = mana;
+        }
+    }
+
+    class Warrior extends Character{
+        rage;
+
+
+        constructor(name, level, gold, health, rage) {
+            super(name, level, gold, health);
+            this.rage = rage;
+        }
+    }
+
+    let speler = new Mage("Gandalf", 9000, 1337, 100, 50);
+    let speler2 = new Warrior("Magnus" , 5000, 60000, 90000, 3000);
+
+    console.log(speler, speler2);
+
+    class Vervoer{
+        merk;
+        bouwjaar;
+
+        constructor(merk, bouwjaar) {
+            this.merk = merk;
+            this.bouwjaar = bouwjaar;
+        }
+    }
+    class Fiets extends Vervoer{
+        bouwjaar;
+        merk;
+
+        constructor(merk, bouwjaar) {
+            super(merk, bouwjaar);
+            this.bouwjaar = bouwjaar;
+            this.merk = merk;
+        }
+    }
+
+    class Auto extends Vervoer{
+        bouwjaar;
+        merk;
+
+        constructor(merk, bouwjaar) {
+            super(merk, bouwjaar);
+            this.bouwjaar = bouwjaar;
+            this.merk = merk;
+        }
+    }
+let fiets = new Fiets("Gazelle", 2019);
+    let auto = new Auto("volkswagen", 2016);
+    console.log(fiets,auto);
+
+
+
+
+
+</script>
+</body>
+</html>
