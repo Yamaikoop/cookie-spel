@@ -74,3 +74,16 @@ body {
     border-radius: 5px;
 }
 
+.upgrades{
+    border: 2px solid #444;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px auto;
+    width: 320px;
+    background: #fff;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+    Display: block;
+    unicode-bidi: isolate;
+    button: var()
+}
